@@ -1,4 +1,43 @@
 body{
     background-color:darkseagreen;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0
     
+}
+
+.header{
+    height: 50px;
+    background-color:#1F2937;
+    display: flex;
+    place-content: center space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+        
+}
+
+.logo{
+    align-self: flex-start;
+}
+
+.links{
+    display: flex;
+    gap:20px;
+}
+.jumbotron{
+    height: 450px;
+}
+
+.quote{
+    height: 450px;
+}
+
+.cta{
+    height: 450px;
+}
+
+.footer{
+    height: 75px;
+    background-color:#1F2937;
 }
