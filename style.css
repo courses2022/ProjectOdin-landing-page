@@ -1,24 +1,45 @@
+@font-face {
+    font-family: 'DuneFont'; /*a name to be used later*/
+    src: url('./Dune_Rise.ttf'); /*URL to font*/
+}
+
 body{
     background-color:darkseagreen;
     display: flex;
     flex-direction: column;
     color: white;
-    margin: 0
-    
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+
 
 .header{
     height: 50px;
-    background-color:#1F2937;
+    background-color: black;
     display: flex;
     place-content: center space-between;
     flex-wrap: wrap;
     padding: 20px;
+    font-size: 18px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: #79846f;
+    
         
+}
+
+.section{
+    padding: 75px;
 }
 
 .logo{
     align-self: flex-start;
+    font-size: 22px;
 }
 
 .links{
@@ -26,7 +47,25 @@ body{
     gap:20px;
 }
 .jumbotron{
-    height: 450px;
+    display: flex;
+    gap:50px;
+    color: #94b5af;
+    background-color: #524220;
+    opacity: 1;
+    height: 100%
+    
+}
+
+.jumbotron div:nth-of-type(1) {width: 60%;}
+.jumbotron div:nth-of-type(2) {width: 40%;}
+
+.title{
+    font-size: 26px;
+    color: #719d97;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px;
 }
 
 .quote{
@@ -40,4 +79,51 @@ body{
 .footer{
     height: 75px;
     background-color:#1F2937;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+blockquote{
+  font-size: 1em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #524220 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+  opacity: 0.9;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#524220;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote span{
+  display:block;
+  color:#79846f;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+.characters{
+    background-color: #94b5af;
+    color: #524220;
+}
+
+.heading{
+    font-size: 28px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: center;
 }
